@@ -20,7 +20,7 @@ Webhooks can be created automatically for ActiveRecord models on Create, Update,
 
 ```ruby
   class Campaign < ApplicationRecord
-	  # Define webhooks
+    # Define webhooks
     webhooks_for :created, :updated, :deleted
 
   end
@@ -38,7 +38,7 @@ Custom Webhooks are defined the same way as standard Webhooks. The below example
 
 ```ruby
   class Email < ApplicationRecord
-	  # Define webhooks
+    # Define webhooks
     webhooks_for :was_delivered
   end
 ```
